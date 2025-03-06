@@ -1,2 +1,0 @@
-Questo file è stato creato da Java!
-E sta funzionando alla grande!

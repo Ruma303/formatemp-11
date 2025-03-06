@@ -5,8 +5,8 @@ import java.io.*;
 
 public class CreateFile {
 	public static void main(String[] args) {
-		String nomeFile;
 		
+		String nomeFile;
 		File file;
 
 		do {
@@ -33,7 +33,5 @@ public class CreateFile {
 		} catch (IOException e) {
 			System.out.println("Errore nella scrittura: " + e.getMessage());
 		}
-	
-
 	}
 }
