@@ -226,7 +226,7 @@ public class IO {
     
     /**
      * Saluta e chiude lo Scanner.
-     * @param msg Messaggio da mostrare durante la saluto
+     * @param msg Messaggio di uscita
      */
     public static void exit(String msg) {
     	IO.pl(msg);
@@ -243,9 +243,24 @@ public class IO {
     
     /**
      * Avverte l'utente.
-     * @param msg Messaggio da mostrare durante la saluto
+     * @param msg Messaggio di avvertimento
      */
     public static void warn(String msg) {
-    	IO.pl(msg);
+    	IO.pl("*** " + msg + " *** ");
+    }
+    
+    /**
+     * Avverte l'utente che si è verificato un errore generico.
+     */
+    public static void err() {
+    	IO.pl("*** ERRORE! ***");
+    }
+    
+    /**
+     * Avverte l'utente che si è verificato un errore.
+     * @param msg Indica l'errore specifico
+     */
+    public static void err(String msg) {
+    	IO.pl("*** ERRORE: " + msg + " *** ");
     }
 }

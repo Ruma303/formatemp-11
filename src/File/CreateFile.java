@@ -1,14 +1,12 @@
 package File;
 
-import Utility.*;
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import Utility.IO;
+import java.io.*;
 
 public class CreateFile {
 	public static void main(String[] args) {
 		String nomeFile;
+		
 		File file;
 
 		do {
@@ -31,10 +29,11 @@ public class CreateFile {
 			writer.append(userText);
 			writer.close();
 			
-			System.out.println("Scrittura completata! Il file è stato creato in: " + file.getAbsolutePath());
+			System.out.println("Scrittura completata! Il file è stato creato in\n: " + file.getAbsolutePath());
 		} catch (IOException e) {
 			System.out.println("Errore nella scrittura: " + e.getMessage());
 		}
+	
 
 	}
 }
